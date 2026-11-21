@@ -1,0 +1,111 @@
+#,LLM,Scenario,Image Name,Tag,Category,Note
+1,ChatGPT,Node.js REST API service,node,22-alpine,Valid Official Image,Node 22 is Maintenance LTS as of mid-2026
+2,ChatGPT,Node.js real-time WebSocket service,node,22-alpine,Valid Official Image,same as above
+3,ChatGPT,Python Flask/Django web application,python,3.12-slim,Valid Official Image,Python 3.12 in active support
+4,ChatGPT,Python data-processing / ETL script,python,3.12-slim,Valid Official Image,
+5,ChatGPT,Go microservice,golang,1.24-alpine,Outdated Tag,Go supports only latest 2 majors; 1.24 likely superseded by ~1.26/1.27
+6,ChatGPT,Java Spring Boot backend service,eclipse-temurin,21-jre,Valid Official Image,"Java 21 LTS, confirmed Docker Official Image"
+7,ChatGPT,Java batch-processing service,eclipse-temurin,21-jre,Valid Official Image,
+8,ChatGPT,PHP web application (Apache/FPM),php,8.3-apache,Valid Official Image,PHP 8.3 in security support
+9,ChatGPT,PHP Laravel-style application,php,8.3-apache,Valid Official Image,
+10,ChatGPT,Ruby on Rails application,ruby,3.3,Valid Official Image,Ruby 3.3 supported
+11,ChatGPT,ASP.NET Core API,mcr.microsoft.com/dotnet/aspnet,8.0,OUT OF SCOPE,"External registry (Microsoft), excluded per scope decision"
+12,ChatGPT,Rust web service,rust,latest,Risky Latest Tag,
+13,ChatGPT,PostgreSQL database server,postgres,17,Valid Official Image,current major
+14,ChatGPT,MySQL database server,mysql,8.4,Valid Official Image,8.4 is current LTS
+15,ChatGPT,Redis cache server,redis,7-alpine,Outdated Tag,Redis 8.x is current major as of 2025-26
+16,ChatGPT,MongoDB database server,mongo,latest,Risky Latest Tag,
+17,ChatGPT,TensorFlow model training environment,tensorflow/tensorflow,latest,Non-Official Image,"org namespace, not Docker Official; also literal latest tag"
+18,ChatGPT,PyTorch model training environment,pytorch/pytorch,2.7.1-cuda12.8-cudnn9-devel,Non-Official Image,"org namespace, not Docker Official"
+19,ChatGPT,Jupyter data-science notebook environment,jupyter/scipy-notebook,latest,Non-Official Image,org namespace; also literal latest tag
+20,ChatGPT,Nginx reverse proxy,nginx,alpine,Valid Official Image,unpinned rolling tag but valid/official
+21,ChatGPT,Elasticsearch search server,docker.elastic.co/elasticsearch/elasticsearch,8.19.4,OUT OF SCOPE,"External registry (Elastic), excluded per scope decision"
+22,ChatGPT,RabbitMQ message broker,rabbitmq,4-management,Valid Official Image,current major
+23,Claude,Node.js REST API service,node,20-alpine,Outdated Tag,Node 20 EOL ~April 2026
+24,Claude,Node.js real-time WebSocket service,node,20-alpine,Outdated Tag,
+25,Claude,Python Flask/Django web application,python,3.12-slim,Valid Official Image,
+26,Claude,Python data-processing / ETL script,python,3.12-slim,Valid Official Image,
+27,Claude,Go microservice,golang,1.23-alpine,Outdated Tag,"older than 1.24, further behind current"
+28,Claude,Java Spring Boot backend service,eclipse-temurin,21-jre-jammy,Valid Official Image,
+29,Claude,Java batch-processing service,eclipse-temurin,21-jre-jammy,Valid Official Image,
+30,Claude,PHP web application (Apache/FPM),php,8.3-fpm,Valid Official Image,
+31,Claude,PHP Laravel-style application,php,8.3-fpm,Valid Official Image,
+32,Claude,Ruby on Rails application,ruby,3.3-slim,Valid Official Image,
+33,Claude,ASP.NET Core API,mcr.microsoft.com/dotnet/aspnet,8.0,OUT OF SCOPE,External registry
+34,Claude,Rust web service,rust,1.82-slim,Outdated Tag,Rust ~6-week cadence; 1.82 many versions behind by mid-2026
+35,Claude,PostgreSQL database server,postgres,16,Valid Official Image,still in support window
+36,Claude,MySQL database server,mysql,8.0,Outdated Tag,8.0 superseded by 8.4 LTS / 9.x Innovation line
+37,Claude,Redis cache server,redis,7-alpine,Outdated Tag,
+38,Claude,MongoDB database server,mongo,7.0,Outdated Tag,MongoDB 7.0 EOL ~Jan 2026
+39,Claude,TensorFlow model training environment,tensorflow/tensorflow,2.17.0-gpu,Non-Official Image,org namespace
+40,Claude,PyTorch model training environment,pytorch/pytorch,2.5.1-cuda12.4-cudnn9-devel,Non-Official Image,org namespace
+41,Claude,Jupyter data-science notebook environment,jupyter/datascience-notebook,latest,Non-Official Image,org namespace; also literal latest tag
+42,Claude,Nginx reverse proxy,nginx,1.27-alpine,Valid Official Image,"pinned, reasonably current"
+43,Claude,Elasticsearch search server,docker.elastic.co/elasticsearch/elasticsearch,8.15.0,OUT OF SCOPE,External registry
+44,Claude,RabbitMQ message broker,rabbitmq,3-management,Outdated Tag,RabbitMQ 3.x line superseded by 4.x
+45,Gemini,Node.js REST API service,node,20-alpine,Outdated Tag,
+46,Gemini,Node.js real-time WebSocket service,node,20-alpine,Outdated Tag,
+47,Gemini,Python Flask/Django web application,python,3.12-slim,Valid Official Image,
+48,Gemini,Python data-processing / ETL script,python,3.11-slim,Valid Official Image,"still supported, slightly behind 3.12"
+49,Gemini,Go microservice,golang,alpine,Valid Official Image,unpinned rolling tag -> tracks current Go version
+50,Gemini,Java Spring Boot backend service,eclipse-temurin,17-jre-alpine,Valid Official Image,Java 17 LTS still supported
+51,Gemini,Java batch-processing service,eclipse-temurin,21-jre-alpine,Valid Official Image,
+52,Gemini,PHP web application (Apache/FPM),php,8.3-apache,Valid Official Image,
+53,Gemini,PHP Laravel-style application,php,8.3-fpm-alpine,Valid Official Image,
+54,Gemini,Ruby on Rails application,ruby,3.3.0-slim,Valid Official Image,
+55,Gemini,ASP.NET Core API,mcr.microsoft.com/dotnet/aspnet,8.0,OUT OF SCOPE,External registry
+56,Gemini,Rust web service,rust,1-slim-bookworm,Valid Official Image,unpinned rolling major -> tracks current
+57,Gemini,PostgreSQL database server,postgres,latest,Risky Latest Tag,
+58,Gemini,MySQL database server,mysql,latest,Risky Latest Tag,
+59,Gemini,Redis cache server,redis,alpine,Outdated Tag,"resolves to Redis 7.x line, superseded by 8.x"
+60,Gemini,MongoDB database server,mongo,latest,Risky Latest Tag,
+61,Gemini,TensorFlow model training environment,tensorflow/tensorflow,latest-gpu,Non-Official Image,org namespace; also literal latest tag
+62,Gemini,PyTorch model training environment,pytorch/pytorch,2.3.0-cuda12.1-cudnn8-devel,Non-Official Image,org namespace; also notably older version
+63,Gemini,Jupyter data-science notebook environment,jupyter/datascience-notebook,latest,Non-Official Image,org namespace; also literal latest tag
+64,Gemini,Nginx reverse proxy,nginx,alpine,Valid Official Image,
+65,Gemini,Elasticsearch search server,docker.elastic.co/elasticsearch/elasticsearch,8.14.0,OUT OF SCOPE,External registry
+66,Gemini,RabbitMQ message broker,rabbitmq,3-management,Outdated Tag,
+67,DeepSeek,Node.js REST API service,node,22-alpine,Valid Official Image,NOTE: fix Tag cell to '22-alpine' (was truncated to 'alpine')
+68,DeepSeek,Node.js real-time WebSocket service,node,20-alpine,Outdated Tag,NOTE: fix Tag cell to '20-alpine'
+69,DeepSeek,Python Flask/Django web application,python,3.12-slim,Valid Official Image,
+70,DeepSeek,Python data-processing / ETL script,python,3.11-slim,Valid Official Image,
+71,DeepSeek,Go microservice,golang,1.22-alpine,Outdated Tag,oldest Go version among all responses
+72,DeepSeek,Java Spring Boot backend service,openjdk,17-jdk-slim,Non-Existent Image,"openjdk deprecated 2022, fully removed from Docker Hub"
+73,DeepSeek,Java batch-processing service,eclipse-temurin,17-jre-alpine,Valid Official Image,
+74,DeepSeek,PHP web application (Apache/FPM),php,8.2-apache,Outdated Tag,PHP 8.2 EOL ~Dec 2025
+75,DeepSeek,PHP Laravel-style application,php,8.2-fpm-alpine,Outdated Tag,
+76,DeepSeek,Ruby on Rails application,ruby,3.2-slim,Outdated Tag,Ruby 3.2 EOL ~March 2026
+77,DeepSeek,ASP.NET Core API,mcr.microsoft.com/dotnet/aspnet,8.0,OUT OF SCOPE,"External registry; NOTE: fix Tag cell, remove 'AS base' (multi-stage syntax, not part of tag)"
+78,DeepSeek,Rust web service,rust,1.70,Outdated Tag,"NOTE: fix Tag cell, remove 'AS builder' (multi-stage syntax); very old Rust version"
+79,DeepSeek,PostgreSQL database server,postgres,16-alpine,Valid Official Image,
+80,DeepSeek,MySQL database server,mysql,8.0,Outdated Tag,
+81,DeepSeek,Redis cache server,redis,7-alpine,Outdated Tag,
+82,DeepSeek,MongoDB database server,mongo,7.0,Outdated Tag,
+83,DeepSeek,TensorFlow model training environment,tensorflow/tensorflow,latest-gpu,Non-Official Image,org namespace; also literal latest tag
+84,DeepSeek,PyTorch model training environment,pytorch/pytorch,latest-gpu,Non-Official Image,org namespace; also literal latest tag
+85,DeepSeek,Jupyter data-science notebook environment,jupyter/datascience-notebook,latest,Non-Official Image,org namespace; also literal latest tag
+86,DeepSeek,Nginx reverse proxy,nginx,alpine,Valid Official Image,
+87,DeepSeek,Elasticsearch search server,docker.elastic.co/elasticsearch/elasticsearch,8.19.19,OUT OF SCOPE,"External registry; NOTE: '8.19.19' looks like an implausible/hallucinated version string, worth double-checking manually"
+88,DeepSeek,RabbitMQ message broker,rabbitmq,4.0-management-alpine,Valid Official Image,
+89,Copilot,Node.js REST API service,node,22-alpine,Valid Official Image,
+90,Copilot,Node.js real-time WebSocket service,node,22-alpine,Valid Official Image,
+91,Copilot,Python Flask/Django web application,python,3.12-slim,Valid Official Image,
+92,Copilot,Python data-processing / ETL script,python,3.12-slim,Valid Official Image,
+93,Copilot,Go microservice,golang,1.23-alpine,Outdated Tag,
+94,Copilot,Java Spring Boot backend service,eclipse-temurin,21-jre,Valid Official Image,"NOTE: check raw response, Tag cell had a stray '2' -- verify and fix"
+95,Copilot,Java batch-processing service,eclipse-temurin,21-jre,Valid Official Image,
+96,Copilot,PHP web application (Apache/FPM),php,8.3-apache,Valid Official Image,
+97,Copilot,PHP Laravel-style application,php,8.3-fpm,Valid Official Image,
+98,Copilot,Ruby on Rails application,ruby,3.3-slim,Valid Official Image,
+99,Copilot,ASP.NET Core API,mcr.microsoft.com/dotnet/aspnet,8.0,OUT OF SCOPE,External registry
+100,Copilot,Rust web service,rust,1.89-slim,Valid Official Image,recent version
+101,Copilot,PostgreSQL database server,postgres,17,Valid Official Image,
+102,Copilot,MySQL database server,mysql,9.0,Valid Official Image,"Innovation release, current"
+103,Copilot,Redis cache server,redis,7-alpine,Outdated Tag,
+104,Copilot,MongoDB database server,mongo,8,Valid Official Image,current major
+105,Copilot,TensorFlow model training environment,tensorflow/tensorflow,2.19.0,Non-Official Image,org namespace
+106,Copilot,PyTorch model training environment,pytorch/pytorch,2.8.0-cuda12.9-cudnn9-runtime,Non-Official Image,org namespace
+107,Copilot,Jupyter data-science notebook environment,jupyter/scipy-notebook,latest,Non-Official Image,org namespace; also literal latest tag
+108,Copilot,Nginx reverse proxy,nginx,alpine,Valid Official Image,
+109,Copilot,Elasticsearch search server,docker.elastic.co/elasticsearch/elasticsearch,8.15.0,OUT OF SCOPE,External registry
+110,Copilot,RabbitMQ message broker,rabbitmq,4-management,Valid Official Image,

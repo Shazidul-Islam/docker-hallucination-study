@@ -1,0 +1,10 @@
+pandas>=2.0
+numpy
+scipy
+matplotlib
+openpyxl
+requests
+# notebooks 01 and 03 only:
+openai
+anthropic
+google-genai
